@@ -40,42 +40,43 @@
             lblBienvenido.AutoSize = true;
             lblBienvenido.BackColor = SystemColors.Control;
             lblBienvenido.BorderStyle = BorderStyle.FixedSingle;
-            lblBienvenido.Font = new Font("Romantic", 24F, FontStyle.Bold);
+            lblBienvenido.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold);
             lblBienvenido.Location = new Point(120, 33);
             lblBienvenido.Name = "lblBienvenido";
-            lblBienvenido.Size = new Size(327, 41);
+            lblBienvenido.Size = new Size(358, 39);
             lblBienvenido.TabIndex = 0;
             lblBienvenido.Text = "Bienvenido Al Sistema";
-            
             // 
             // btnAceptar
             // 
             btnAceptar.BackColor = SystemColors.ButtonHighlight;
-            btnAceptar.Location = new Point(239, 105);
+            btnAceptar.Location = new Point(239, 137);
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(103, 38);
             btnAceptar.TabIndex = 1;
             btnAceptar.Text = "ACEPTAR";
             btnAceptar.UseVisualStyleBackColor = false;
-            
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // pctRobot
             // 
+            pctRobot.BackColor = Color.Cyan;
+            pctRobot.BorderStyle = BorderStyle.Fixed3D;
             pctRobot.ErrorImage = (Image)resources.GetObject("pctRobot.ErrorImage");
             pctRobot.Image = Properties.Resources.ROBOT;
             pctRobot.InitialImage = (Image)resources.GetObject("pctRobot.InitialImage");
             pctRobot.Location = new Point(176, 149);
             pctRobot.Name = "pctRobot";
-            pctRobot.Size = new Size(225, 169);
+            pctRobot.Size = new Size(229, 229);
+            pctRobot.SizeMode = PictureBoxSizeMode.AutoSize;
             pctRobot.TabIndex = 2;
             pctRobot.TabStop = false;
-            
             // 
             // frmInicio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(0, 192, 192);
+            BackColor = Color.Black;
             ClientSize = new Size(577, 330);
             Controls.Add(btnAceptar);
             Controls.Add(pctRobot);
